@@ -4,6 +4,10 @@ A fast, visual tool that configures all your installed Steam games to your prefe
 
 Built entirely in PowerShell so it runs natively on Windows with no extra installations required.
 
+## Download
+**You can download the latest ready-to-use version here:**
+👉 [Download Latest Release](https://github.com/ByAldon/Steam-Auto-Update-Optimizer/releases)
+
 ## Features
 - **Graphical User Interface (GUI):** A clean, dark-themed visual interface makes it incredibly easy to use.
 - **Customizable Settings:** Choose exactly how you want your games to behave using intuitive dropdown menus that match Steam's exact options (Auto-updates & Background downloads).
@@ -14,7 +18,7 @@ Built entirely in PowerShell so it runs natively on Windows with no extra instal
 - **Smart Steam Detection:** The app automatically detects if Steam is running in the background. It will pause execution in a "waiting room" until Steam is completely closed, ensuring no files get corrupted.
 
 ## How to use
-1. Download the release and extract the files.
+1. Download the latest release from the link above and extract the files.
 2. Double-click the **`Start_Optimizer.bat`** file.
 3. If Steam is running, the console will ask you to close it first.
 4. Once open, click **Browse...** to select your `steamapps` folder (or leave the default if correct).
