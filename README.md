@@ -5,7 +5,7 @@
        alt="Steam Optimizer Interface"
        width="500">
 </a>
-
+<br>
 *Are you tired of Steam suddenly downloading huge updates for games you aren't even playing right now?*
 
 Normally, if you want to stop this, you have to right-click **every single game** in your Steam library, go to Properties, and change the update settings one by one. If you have 50 or 500 games, that takes forever!
