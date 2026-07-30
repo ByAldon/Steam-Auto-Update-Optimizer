@@ -13,6 +13,12 @@ Normally, if you want to stop this, you have to right-click **every single game*
 
 This simple tool solves that problem. It lets you change the update and background download settings for **all your games at once** with just one click.
 
+<a href="https://github.com/ByAldon/Steam-Auto-Update-Optimizer">
+  <img src="https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/img/2026-07-30 21_26_03-Steam.png"
+       alt="Steam Optimizer Interface"
+       width="500">
+</a>
+
 ---
 
 ### 📥 How to Download
