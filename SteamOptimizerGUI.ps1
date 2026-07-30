@@ -148,7 +148,7 @@ $lblTitle.Location = New-Object System.Drawing.Point(20, 15)
 $form.Controls.Add($lblTitle)
 
 $lblNote = New-Object System.Windows.Forms.Label
-$lblNote.Text = "Safely modifies your local Steam .acf files. Does not delete game data or use the internet."
+$lblNote.Text = "Safely modifies your local Steam settings. Does not delete game data or use the internet."
 $lblNote.Font = $fontSmall
 $lblNote.ForeColor = [System.Drawing.Color]::LightGray
 $lblNote.AutoSize = $true

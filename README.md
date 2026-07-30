@@ -1,27 +1,35 @@
-# Steam Auto-Update Optimizer (GUI Version)
+# 🎮 Steam Auto-Update Optimizer
 
-A fast, visual tool that configures all your installed Steam games to your preferred update settings in just one click. 
+*Are you tired of Steam suddenly downloading huge updates for games you aren't even playing right now?*
 
-Built entirely in PowerShell so it runs natively on Windows with no extra installations required.
+Normally, if you want to stop this, you have to right-click **every single game** in your Steam library, go to Properties, and change the update settings one by one. If you have 50 or 500 games, that takes forever!
 
-## Download
-**You can download the latest ready-to-use version here:**
-👉 [Download Latest Release](https://github.com/ByAldon/Steam-Auto-Update-Optimizer/releases)
+This simple tool solves that problem. It lets you change the update and background download settings for **all your games at once** with just one click.
 
-## Features
-- **Graphical User Interface (GUI):** A clean, dark-themed visual interface makes it incredibly easy to use.
-- **Customizable Settings:** Choose exactly how you want your games to behave using intuitive dropdown menus that match Steam's exact options (Auto-updates & Background downloads).
-- **One-Click Revert:** Made a mistake or want to go back? The built-in Revert button safely sets your entire library back to Steam's default settings instantly.
-- **Modern Folder Picker:** Utilizes native Windows APIs to provide the modern Windows 11 Explorer interface for selecting your Steam folder.
-- **100% Transparent & Safe:** This script only edits two specific text values (`AutoUpdateBehavior` and `AllowOtherDownloadsWhileRunning`) inside your `.acf` files. It does NOT delete anything, does not touch your actual game data, and does not require an internet connection.
-- **Live Logging:** See exactly which games are being updated in real-time within the app.
-- **Smart Steam Detection:** The app automatically detects if Steam is running in the background. It will pause execution in a "waiting room" until Steam is completely closed, ensuring no files get corrupted.
+---
 
-## How to use
-1. Download the latest release from the link above and extract the files.
-2. Double-click the **`Start_Optimizer.bat`** file.
-3. If Steam is running, the console will ask you to close it first.
-4. Once open, click **Browse...** to select your `steamapps` folder (or leave the default if correct).
-5. Select your preferred behavior from the **Automatic Updates** and **Background Downloads** dropdown menus.
-6. Click **APPLY SETTINGS**. *(Alternatively, click **REVERT TO DEFAULTS** to undo all changes).*
-7. Close the tool and start Steam!
+### 📥 How to Download
+👉 **[Click here to download the latest version!](https://github.com/ByAldon/Steam-Auto-Update-Optimizer/releases)** 
+*(Download the `.zip` file from the latest release)*
+
+---
+
+### 🚀 How to Use It
+1. **Unzip the file:** Download the `.zip` file from the link above and extract (unzip) it to a folder on your computer.
+2. **Close Steam:** Make sure Steam is completely closed. *(Right-click the Steam icon in the bottom right corner of your screen and click 'Exit').*
+3. **Start the Tool:** Double-click the file named `Start_Optimizer.bat`.
+4. **Choose your Settings:** The program will open a simple menu.
+    * Under **Automatic Updates**, choose how you want your games to update (for example: *"Wait until I launch the game"*).
+    * Under **Background Downloads**, choose if Steam is allowed to download stuff while you are playing another game.
+5. **Click Apply!** Click the big green **APPLY SETTINGS** button. 
+
+That's it! The tool will do the hard work for you. You can close it and start Steam again.
+
+---
+
+### 🛡️ Is it safe?
+**Yes, 100%!** 
+* It does **not** delete any of your games.
+* It does **not** need an internet connection.
+* It just safely tells Steam what your new settings are.
+* If you ever want to undo everything, just open this tool again and click the orange **REVERT TO DEFAULTS** button. Steam will go exactly back to how it was!
