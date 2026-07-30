@@ -1,6 +1,10 @@
 # 🎮 Steam Auto-Update Optimizer
 
-![Steam Optimizer Interface](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/interface.png)
+<a href="https://github.com/ByAldon/Steam-Auto-Update-Optimizer">
+  <img src="https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/interface.png"
+       alt="Steam Optimizer Interface"
+       width="500">
+</a>
 
 *Are you tired of Steam suddenly downloading huge updates for games you aren't even playing right now?*
 
@@ -38,3 +42,4 @@ That's it! The tool will do the hard work for you. You can close it and start St
 * It does **not** need an internet connection.
 * It just safely tells Steam what your new settings are.
 * If you ever want to undo everything, just open this tool again and click the orange **REVERT TO DEFAULTS** button. Steam will go exactly back to how it was!
+
