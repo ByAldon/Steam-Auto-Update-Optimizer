@@ -1,5 +1,7 @@
 # 🎮 Steam Auto-Update Optimizer
 
+![Steam Optimizer Interface](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/interface.png)
+
 *Are you tired of Steam suddenly downloading huge updates for games you aren't even playing right now?*
 
 Normally, if you want to stop this, you have to right-click **every single game** in your Steam library, go to Properties, and change the update settings one by one. If you have 50 or 500 games, that takes forever!
@@ -18,9 +20,12 @@ This simple tool solves that problem. It lets you change the update and backgrou
 1. **Unzip the file:** Download the `.zip` file from the link above and extract (unzip) it to a folder on your computer.
 2. **Close Steam:** Make sure Steam is completely closed. *(Right-click the Steam icon in the bottom right corner of your screen and click 'Exit').*
 3. **Start the Tool:** Double-click the file named `Start_Optimizer.bat`.
-4. **Choose your Settings:** The program will open a simple menu.
-    * Under **Automatic Updates**, choose how you want your games to update (for example: *"Wait until I launch the game"*).
-    * Under **Background Downloads**, choose if Steam is allowed to download stuff while you are playing another game.
+
+4. **Choose your Settings:** The program will open a simple menu where you can configure your update and download behavior:
+
+![Select Settings 1](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/autoupdates.png)
+![Select Settings 2](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/backgrounddownloads.png)
+
 5. **Click Apply!** Click the big green **APPLY SETTINGS** button. 
 
 That's it! The tool will do the hard work for you. You can close it and start Steam again.

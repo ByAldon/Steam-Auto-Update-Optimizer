@@ -121,7 +121,7 @@ try {
     Add-Type -TypeDefinition $csharpCode -ErrorAction Stop
     $modernPickerLoaded = $true
 } catch {
-    # Fallback to older picker if compilation is blocked
+    # Fallback
 }
 Write-Host "Done!" -ForegroundColor Green
 
@@ -195,7 +195,7 @@ $cmbAutoUpdate.DropDownStyle = [System.Windows.Forms.ComboBoxStyle]::DropDownLis
 $cmbAutoUpdate.Items.Add("Let Steam decide when to update (Default)")
 $cmbAutoUpdate.Items.Add("Wait until I launch the game")
 $cmbAutoUpdate.Items.Add("Immediately download updates (Priority)")
-$cmbAutoUpdate.SelectedIndex = 2 # Default to High Priority
+$cmbAutoUpdate.SelectedIndex = 2
 $form.Controls.Add($cmbAutoUpdate)
 
 $lblBackground = New-Object System.Windows.Forms.Label
@@ -213,7 +213,7 @@ $cmbBackground.DropDownStyle = [System.Windows.Forms.ComboBoxStyle]::DropDownLis
 $cmbBackground.Items.Add("Follow global Steam settings (Default)")
 $cmbBackground.Items.Add("Always allow background downloads")
 $cmbBackground.Items.Add("Never allow background downloads")
-$cmbBackground.SelectedIndex = 1 # Default to Always Allow
+$cmbBackground.SelectedIndex = 1
 $form.Controls.Add($cmbBackground)
 
 # --- LISTBOX ---
@@ -258,7 +258,6 @@ $form.Controls.Add($btnRevert)
 $btnBrowse.Add_Click({
     $selectedPath = "ERROR"
 
-    # 1. Try Modern Windows 11 Explorer Picker
     if ($modernPickerLoaded) {
         try {
             $selectedPath = [ModernFolderPicker]::ShowDialog($form.Handle)
@@ -267,17 +266,13 @@ $btnBrowse.Add_Click({
         }
     }
 
-    # 2. Check Result
-    if ($selectedPath -eq "CANCEL") {
-        return # User just clicked cancel, do nothing.
-    }
+    if ($selectedPath -eq "CANCEL") { return }
     
     if ($selectedPath -ne "ERROR" -and -not [string]::IsNullOrWhiteSpace($selectedPath)) {
         $txtPath.Text = $selectedPath
         return
     }
 
-    # 3. Bulletproof Fallback (Classic Tree Picker) if modern picker failed
     $browser = New-Object System.Windows.Forms.FolderBrowserDialog
     $browser.Description = "Select your Steamapps folder"
     if ($txtPath.Text -and (Test-Path $txtPath.Text)) {
@@ -379,29 +374,23 @@ $btnApply.Add_Click({
 })
 
 $btnRevert.Add_Click({
-    # Reset dropdown menus to visual defaults as well
     $cmbAutoUpdate.SelectedIndex = 0
     $cmbBackground.SelectedIndex = 0
     $form.Refresh()
-
-    # Pass '0' '0' directly
     Execute-SteamUpdate -autoUpdateVal "0" -allowBgVal "0" -actionName "Reverted"
 })
 
 Write-Host "Done!" -ForegroundColor Green
-
 Log-Message "Ready. Select your desired settings and click Apply."
 
 # --- 5. LAUNCH GUI ---
 Write-Host "`nLaunching UI..." -ForegroundColor Cyan
 Start-Sleep -Milliseconds 400
 
-# Completely hide the CMD window just as the GUI opens
 if ($modernPickerLoaded) {
     $hwnd = [Win32]::GetConsoleWindow()
     if ($hwnd -ne [IntPtr]::Zero) {
         [Win32]::ShowWindow($hwnd, 0) | Out-Null
     }
 }
-
 $form.ShowDialog() | Out-Null
