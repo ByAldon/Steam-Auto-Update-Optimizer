@@ -15,7 +15,7 @@ This simple tool solves that problem. It lets you change the update and backgrou
 
 <a href="https://github.com/ByAldon/Steam-Auto-Update-Optimizer">
   <img src="https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/img/2026-07-30 21_26_03-Steam.png"
-       alt="Steam Optimizer Interface"
+       alt="Steam"
        width="500">
 </a>
 
@@ -34,8 +34,16 @@ This simple tool solves that problem. It lets you change the update and backgrou
 
 4. **Choose your Settings:** The program will open a simple menu where you can configure your update and download behavior:
 
-![Select Settings 1](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/autoupdates.png)
-![Select Settings 2](https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/backgrounddownloads.png)
+<a href="https://github.com/ByAldon/Steam-Auto-Update-Optimizer">
+  <img src="https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/autoupdates.png"
+       alt="Select Settings 1"
+       width="500">
+</a>
+<a href="https://github.com/ByAldon/Steam-Auto-Update-Optimizer">
+  <img src="https://raw.githubusercontent.com/ByAldon/Steam-Auto-Update-Optimizer/main/demo/backgrounddownloads.png"
+       alt="Select Settings 2"
+       width="500">
+</a>
 
 5. **Click Apply!** Click the big green **APPLY SETTINGS** button. 
 
